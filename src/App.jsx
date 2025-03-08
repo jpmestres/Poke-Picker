@@ -38,7 +38,7 @@ function App() {
       <div className="container">
         <img src={circleImage} alt="Circle" className="stomach" />
         <img src={bellyButtonImage} alt="Belly Button" className="belly-button" />
-        <svg className="star" width="250" height="250" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <svg className="star" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
           <circle cx="12" cy="2" r="0.5" className={`star-point ${activePoint === 0 ? 'active' : ''}`} />
           <circle cx="22" cy="9" r="0.5" className={`star-point ${activePoint === 1 ? 'active' : ''}`} />
           <circle cx="18" cy="21" r="0.5" className={`star-point ${activePoint === 2 ? 'active' : ''}`} />
@@ -47,7 +47,7 @@ function App() {
         </svg>
       </div>
       <div className="button-container">
-        <button className="pick-button" onClick={handlePick}>Pick</button>
+        <button className="pick-button" onClick={handlePick}>PICK</button>
       </div>
     </>
   )
