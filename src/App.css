@@ -83,7 +83,7 @@
   text-align: center;
   margin-top: 20px;
   position: absolute;
-  bottom: 5%;
+  bottom: 0%;
   left: 10%;
   width: 80%;
 }
@@ -98,4 +98,8 @@
 
 .container {
   height: 100%;
+}
+
+#root {
+  position: relative;
 }
